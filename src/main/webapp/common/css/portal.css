@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "M PLUS Rounded 1c";
+}
+
+body {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- ヘッダー ---------- */
+.main-section {
+  position: relative;
+}
+
+.main-section nav {
+  background: rgba(51, 130, 193, 1);
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  padding: 0 20px;
+  transition: all 0.5s ease;
+  align-items: center;
+}
+
+#img {
+  display: flex;
+  width: 300px;
+  height: 65px;
+}
+
+/* ユーザー情報エリア */
+.main-section nav .profile-details {
+  display: flex;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  padding: 0 15px 0 2px;
+}
+
+nav .profile-details .admin_name {
+  margin: 0 10px;
+}
+
+.main-content {
+  position: relative;
+  padding: 100px 20px 0 20px;
+}
+
+/* コンテンツボックス-タイトル */
+.main-content .box-leyout .title {
+  background: rgba(51, 130, 193, 1);
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  height: 70px;
+  padding: 5px 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* インフォメーション */
+.main-content .info-box {
+  position: absolute;
+  width: 55%;
+  height: 500px;
+}
+
+.main-content .work-box {
+  position: absolute;
+  left: 57%;
+  width: 41%;
+  height: 400px;
+}
+
+/* リンクアイコン */
+.main-content .link-box {
+  position: absolute;
+  top: 620%;
+  width: 55%;
+  height: 250px;
+}
+
+.link-box .link-iconList {
+  display: flex;
+  padding: 20px 30px;
+  vertical-align: middle;
+}
+
+.link-box .link-iconList img {
+  border-radius: 8px;
+  outline: 2px solid rgba(51, 130, 193, 1);
+  margin: 5px 20px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.link-box .link-iconList span {
+  cursor: default;
+}
+
+.link-box .link-iconList span {
+  margin: 0 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgba(51, 130, 193, 1);
+}
+
+.link-iconList .icon-layout {
+  display: flex;
+  flex-flow: column;
+}
+
+.link-box .link-iconList img:hover {
+  opacity: 0.6;
+}
+
+/* TODOリスト */
+.main-content .todo-box {
+  position: absolute;
+  top: 520%;
+  left: 57%;
+  width: 41%;
+  height: 350px;
+}
+
+.main-content .box-leyout {
+  background: #fff;
+  border-radius: 12px;
+  /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); */
+  outline: 3px solid rgba(112, 112, 112, 1);
+}

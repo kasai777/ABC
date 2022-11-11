@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "M PLUS Rounded 1c";
+}
+
+body {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ヘッダー */
+.header {
+  background: rgba(51, 130, 193, 1);
+  height: 80px;
+}
+
+/* アイコン */
+#img {
+  position: absolute;
+  width: 300px;
+  height: 65px;
+  left: 20px;
+  top: 0px;
+}
+
+/* 見出し */
+h1 {
+  margin: 10px 0px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+/* メインエリア */
+.container {
+  padding: 16px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 900px;
+  width: 100%;
+  height: 550px;
+  border-radius: 40px;
+  background: rgba(247, 246, 255, 1);
+  border: 1px solid rgba(112, 112, 112, 1);
+}
+
+/* メインエリア（内部） */
+.field {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* 社員番号 */
+.field > .employeeNum-field {
+  margin: 30px 0;
+}
+
+/* ラベル */
+.field label {
+  font-size: 30px;
+  color: rgba(112, 112, 112, 1);
+}
+
+/* テキストボックス */
+.text_format {
+  overflow: visible;
+  width: 517px;
+  height: 70px;
+  border: solid 2px rgb(179, 179, 179);
+  border-radius: 20px;
+  font-size: 30px;
+  padding: 15px;
+}
+
+.password-field .show-hide {
+  position: absolute;
+  top: 57%;
+  transform: translateY(-50%);
+  left: 88%;
+  font-size: 30px;
+  color: rgba(112, 112, 112, 1);
+}
+
+/* ボタン_位置 */
+.button-field {
+  text-align: center;
+}
+
+/* ボタン */
+.button-field input {
+  margin-top: 80px;
+  height: 75px;
+  width: 280px;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(122, 153, 255, 1);
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+}
+
+/* ボタンフォーカス時 */
+.button-field input:hover {
+  background-color: rgba(122, 150, 220, 1);
+}
+
+/* ログインボタン押下時の挙動
+.submit_login:active {
+  transform: translate(0, 2px);
+  border-bottom: none;
+} */
+
+/* 下部エリア */
+.container-other {
+  position: relative;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 900px;
+  text-align: right;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 1);
+}
+
+/* 下部エリア_リンク */
+.container-other a {
+  color: rgba(51, 130, 193, 1);
+  text-decoration: none;
+  font-weight: bold;
+}
